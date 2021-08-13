@@ -19,23 +19,24 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 mt-5">
-          <p>
-            <a
-              class="btn btn-primary"
-              role="button"
-              data-bs-toggle="collapse"
-              href="#contentId"
+          <div class="dropdown open">
+            <button
+              class="btn btn-secondary btn-sm|lg dropdown-toggle"
+              type="button"
+              id="triggerId"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
               aria-expanded="false"
-              aria-controls="contentId"
             >
-              Show
-            </a>
-          </p>
-          <div class="collapse" id="contentId">
-            <div class="card card-body">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque aperiam porro ad, minima libero
-              ratione odio delectus non molestias labore, sapiente quidem iure similique suscipit qui alias sed? Maxime,
-              eos.
+              Dropdown
+            </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item disabled" href="#">Disabled action</a>
+              <h6 class="dropdown-header">Section header</h6>
+              <a class="dropdown-item" href="#">Action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ater divider action</a>
             </div>
           </div>
         </div>
